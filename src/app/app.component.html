@@ -8,13 +8,16 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <div>
-  <h1>Hello {{this.userName}} from BridgeLabz</h1>
+  <h1>Hello {{ userName }} from BridgeLabz</h1>
   <img [src]="imgUrl" (click)="OnClick($event)" alt="The BridgeLabz Logo" />
 </div>
 
 <div>
-  <input [(ngModel)] = "userName" placeholder="Enter Name For Greeting" /> <br/><br/>
+  <input [(ngModel)]="userName" (input)="onInput()" placeholder="Enter Name For Greeting" />
+  <span style="color: red">{{ userError }}</span>
+  <br /><br />
 </div>
+
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
 <!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
@@ -22,5 +25,3 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<router-outlet></router-outlet>
