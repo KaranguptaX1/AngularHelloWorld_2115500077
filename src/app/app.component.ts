@@ -8,4 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HelloWorld';
   imgUrl="../assets/BL_logo.jpg";
+  url="https://www.bridgelabz.com";
+
+  OnClick($event : Event){  
+    console.log("Save button is clicked",$event);
+    window.open(this.url,"_blank");
+  }
 }
