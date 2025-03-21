@@ -2,3 +2,17 @@
     text-align: center;
     font-size: x-large;
 }
+img{
+    display: block;
+    margin: 0 auto;
+    width: 25%;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }

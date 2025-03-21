@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
